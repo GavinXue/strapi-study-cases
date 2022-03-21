@@ -1,0 +1,13 @@
+{
+	"printWidth": 80,
+	"semi": false,
+	"vueIndentScriptAndStyle": false,
+	"singleQuote": true,
+	"trailingComma": "all",
+	"endOfLine": "auto",
+	"proseWrap": "never",
+	"htmlWhitespaceSensitivity": "strict",
+	"stylelintIntegration": true,
+	"eslintIntegration": true
+  }
+  

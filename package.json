@@ -1,0 +1,8 @@
+{
+	"name": "strapi-study-cases",
+	"version": "0.0.1",
+	"description": "study cases",
+	"private": false,
+	"author": "Gavin Xue",
+	"license": "MIT"
+}
