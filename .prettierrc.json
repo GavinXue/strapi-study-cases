@@ -9,5 +9,4 @@
 	"htmlWhitespaceSensitivity": "strict",
 	"stylelintIntegration": true,
 	"eslintIntegration": true
-  }
-  
+}
