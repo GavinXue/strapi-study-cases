@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "houses",
+  "info": {
+    "singularName": "house",
+    "pluralName": "houses",
+    "displayName": "House"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "listingID": {
+      "type": "string"
+    },
+    "bed": {
+      "type": "integer"
+    },
+    "bath": {
+      "type": "integer"
+    },
+    "rent": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}
