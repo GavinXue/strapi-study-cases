@@ -65,12 +65,11 @@ $RECYCLE.BIN/
 # Logs and databases
 ############################
 
-# cancle it to use same db onlien
 # .tmp
-# *.log
-# *.sql
-# *.sqlite
-# *.sqlite3
+*.log
+*.sql
+*.sqlite
+*.sqlite3
 
 
 ############################
@@ -78,11 +77,11 @@ $RECYCLE.BIN/
 ############################
 
 *#
-# ssl
-# .idea
-# nbproject
-# public/uploads/*
-# !public/uploads/.gitkeep
+ssl
+.idea
+nbproject
+public/uploads/*
+!public/uploads/.gitkeep
 
 ############################
 # Node.js
@@ -107,9 +106,8 @@ coverage
 # Strapi
 ############################
 
-# upload to make onlien
-# .env
-# license.txt
+.env
+license.txt
 exports
 *.cache
 build

@@ -2,7 +2,7 @@
   "name": "strapi-study-cases",
   "private": true,
   "version": "0.1.0",
-  "description": "Strapi study",
+  "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -11,18 +11,18 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "@strapi/strapi": "4.1.7",
     "@strapi/plugin-documentation": "^4.1.7",
     "@strapi/plugin-graphql": "^4.1.7",
-    "@strapi/plugin-i18n": "4.1.7",
     "@strapi/plugin-users-permissions": "4.1.7",
-    "@strapi/strapi": "4.1.7",
+    "@strapi/plugin-i18n": "4.1.7",
     "better-sqlite3": "7.4.6"
   },
   "author": {
     "name": "Gavin Xue"
   },
   "strapi": {
-    "uuid": "70696b6d-0b23-41a7-871d-85144228d2b8"
+    "uuid": "9aef5424-3d02-45f6-a1aa-0c6544957548"
   },
   "engines": {
     "node": ">=12.x.x <=16.x.x",
