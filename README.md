@@ -15,6 +15,7 @@ npm run develop
 Run thest cases online: `warn:` It seems this does not work on [stackblitz](https://stackblitz.com/), beause of some unsupported shell syntax(JSH). check some problem [Strapi on Stackblitz](https://forum.strapi.io/t/strapi-on-stackblitz/16323)
 
 I have tried that it is worked on [replit](https://replit.com/). and the file `.replit` and `replit.nix` are the config file for replit.(import github repo to replit, then click run, and wait)
+[replit repo work link](https://strapi-study-cases.gavinxue1.repl.co/admin/auth/login)
 
 Due to I have update the sqllite db to github. When run these cases the test strapi, you can directly login with:
 
