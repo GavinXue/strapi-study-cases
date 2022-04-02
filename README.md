@@ -46,3 +46,10 @@ reference: [Backend customization - Controllers - Strapi Developer Docs](https:/
 This comes from a question in [Auto populate title field with content from other fields - Questions and Answers - Strapi Community Forum](https://forum.strapi.io/t/auto-populate-title-field-with-content-from-other-fields/17266/3) .
 
 solve it to extend entity update and create controller. case code: [./src/api/house/controllers/house.js](src/api/house/controllers/house.js)
+
+### set limitation of populate fields
+
+This comes from [How to set Limit of a relation - Discussions - Strapi Community Forum](https://forum.strapi.io/t/how-to-set-limit-of-a-relation/16952)
+It still a extend core controller problem.
+
+case code: [./src/api/article/controllers/article.js](src/api/article/controllers/article.js)
