@@ -1,57 +1,38 @@
-# 🚀 Getting started with Strapi
+# strapi-study-cases
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+start these cases local:
 
-### `develop`
-
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
-
-```
+```sh
+git clone https://github.com/GavinXue/strapi-study-cases.git
+npm install
 npm run develop
-# or
-yarn develop
 ```
 
-### `start`
+Note some cases when use [strapi](https://strapi.io)
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
+Due to I have update the sqllite db to github. When run these cases the test strapi, you can directly login with:  
 
-```
-npm run start
-# or
-yarn start
-```
+name: strapi@test.com  
+password: Strapi2022
 
-### `build`
+## add a refresh token api
 
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
+reference: [strapi docs](https://docs.strapi.io/developer-docs/latest/development/plugins-extension.html#extending-a-plugin-s-interface)  
+when token expired, you can issue a new token. and when you want customize other plugin's interface, it should be the same logic.  
+case code: [/src/extensions/users-permissions/strapi-server.js](src/extensions/users-permissions/strapi-server.js)
 
-```
-npm run build
-# or
-yarn build
-```
+## add customizing graphql query as refreshToken
 
-## ⚙️ Deployment
+reference: [strapi docs](https://docs.strapi.io/developer-docs/latest/plugins/graphql.html#customization)  
+should be modify the entry file: [./src/index.js](src/index.js)  
+if customizing more types or apis, taking these code to a new module may be better.  
+case code: [./src/extensions/graphql](src/extensions/graphql/customizeExt.js)
 
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
+## extend core controllers
 
-## 📚 Learn more
+reference: [Backend customization - Controllers - Strapi Developer Docs](https://docs.strapi.io/developer-docs/latest/development/backend-customization/controllers.html#extending-core-controllers)
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
+This comes from a question in [Auto populate title field with content from other fields - Questions and Answers - Strapi Community Forum](https://forum.strapi.io/t/auto-populate-title-field-with-content-from-other-fields/17266/3) .
 
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+solve it to extend entity update and create controller. 
+case code: [./src/api/house/controllers/house.js](src/api/house/controllers/house.js)
