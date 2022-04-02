@@ -1,8 +1,32 @@
 {
-	"name": "strapi-study-cases",
-	"version": "0.0.1",
-	"description": "study cases",
-	"private": false,
-	"author": "Gavin Xue",
-	"license": "MIT"
+  "name": "strapi-study-cases",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Strapi study",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/plugin-documentation": "^4.1.7",
+    "@strapi/plugin-graphql": "^4.1.7",
+    "@strapi/plugin-i18n": "4.1.7",
+    "@strapi/plugin-users-permissions": "4.1.7",
+    "@strapi/strapi": "4.1.7",
+    "better-sqlite3": "7.4.6"
+  },
+  "author": {
+    "name": "Gavin Xue"
+  },
+  "strapi": {
+    "uuid": "70696b6d-0b23-41a7-871d-85144228d2b8"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
 }
