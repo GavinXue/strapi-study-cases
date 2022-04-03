@@ -53,3 +53,6 @@ This comes from [How to set Limit of a relation - Discussions - Strapi Community
 It still a extend core controller problem.
 
 case code: [./src/api/article/controllers/article.js](src/api/article/controllers/article.js)
+
+## Some Questions
+- [How to add filters such as _limit to strapi controller (findOne)? - Questions and Answers - Strapi Community Forum](https://forum.strapi.io/t/how-to-add-filters-such-as-limit-to-strapi-controller-findone/17304)  case code: [src/api/course-serial/controllers/course-serial.js](src/api/course-serial/controllers/course-serial.js)
