@@ -14,8 +14,7 @@ npm run develop
 
 Run thest cases online: `warn:` It seems this does not work on [stackblitz](https://stackblitz.com/), beause of some unsupported shell syntax(JSH). check some problem [Strapi on Stackblitz](https://forum.strapi.io/t/strapi-on-stackblitz/16323)
 
-I have tried that it is worked on [replit](https://replit.com/). and the file `.replit` and `replit.nix` are the config file for replit.(import github repo to replit, then click run, and wait)
-[replit repo work link](https://strapi-study-cases.gavinxue1.repl.co/admin/auth/login)
+I have tried that it is worked on [replit](https://replit.com/). and the file `.replit` and `replit.nix` are the config file for replit.(import github repo to replit, then click run, and wait) [replit repo work link](https://strapi-study-cases.gavinxue1.repl.co/admin/auth/login)
 
 Due to I have update the sqllite db to github. When run these cases the test strapi, you can directly login with:
 
@@ -49,10 +48,10 @@ solve it to extend entity update and create controller. case code: [./src/api/ho
 
 ### set limitation of populate fields
 
-This comes from [How to set Limit of a relation - Discussions - Strapi Community Forum](https://forum.strapi.io/t/how-to-set-limit-of-a-relation/16952)
-It still a extend core controller problem.
+This comes from [How to set Limit of a relation - Discussions - Strapi Community Forum](https://forum.strapi.io/t/how-to-set-limit-of-a-relation/16952) It still a extend core controller problem.
 
 case code: [./src/api/article/controllers/article.js](src/api/article/controllers/article.js)
 
 ## Some Questions
-- [How to add filters such as _limit to strapi controller (findOne)? - Questions and Answers - Strapi Community Forum](https://forum.strapi.io/t/how-to-add-filters-such-as-limit-to-strapi-controller-findone/17304)  case code: [src/api/course-serial/controllers/course-serial.js](src/api/course-serial/controllers/course-serial.js)
+
+- [How to add filters such as \_limit to strapi controller (findOne)? - Questions and Answers - Strapi Community Forum](https://forum.strapi.io/t/how-to-add-filters-such-as-limit-to-strapi-controller-findone/17304) case code: [src/api/course-serial/controllers/course-serial.js](src/api/course-serial/controllers/course-serial.js)

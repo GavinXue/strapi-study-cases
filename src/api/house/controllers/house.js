@@ -1,5 +1,7 @@
 'use strict';
 
+const { pagination } = require('@strapi/utils/lib');
+
 /**
  *  house controller
  */
@@ -20,5 +22,13 @@ module.exports = createCoreController('api::house.house', ({ strapi }) => ({
     const finalRes = await super.update(ctx)
 
     return finalRes
+  },
+
+  async find(ctx) {
+
+    const { data: projects, meta } = await super.find({})
+    console.log(projects, meta)
+
+    return projects
   }
 }));
