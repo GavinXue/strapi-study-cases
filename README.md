@@ -2,14 +2,18 @@
 
 This Repo show some cases of using [Strapi - Open source Node.js Headless CMS 🚀](https://strapi.io/), I do always confused by offcial docs, as a newer to strapi I record some running example to study.
 
+## Flatten Graphql Result of V4
+
+If you want flatten graphql result of v4, visit [graphql modified docs](src/plugins/graphql/README.md)
+
 ## Run the cases
 
 Run these cases local:
 
 ```sh
 git clone https://github.com/GavinXue/strapi-study-cases.git
-npm install
-npm run develop
+yarn     # or npm install
+yarn develop    # or npm run develop
 ```
 
 Run thest cases online: `warn:` It seems this does not work on [stackblitz](https://stackblitz.com/), beause of some unsupported shell syntax(JSH). check some problem [Strapi on Stackblitz](https://forum.strapi.io/t/strapi-on-stackblitz/16323)
