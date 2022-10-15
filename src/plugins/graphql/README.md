@@ -2,6 +2,14 @@
 
 Due to strapi v4 graphql result nesting `data/atrributes` is so boring. I want to find if there is a way to modify the plugin to solve it temporary.
 
+Before Modified:
+
+![before](../../../imgs/gql_before.jpg)
+
+After Modified:
+
+![after](../../../imgs/gql_after.jpg)
+
 ## Test the modified Result
 
 you can clone the repo and test result structrue:
