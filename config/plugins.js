@@ -1,6 +1,9 @@
 module.exports = {
   'graphql': {
     enabled: true,
-    resolve: './src/plugins/graphql'
+    resolve: './src/plugins/graphql',
+    config: {
+      subscriptions: true
+    }
   }
 };

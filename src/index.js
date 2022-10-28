@@ -1,6 +1,7 @@
 'use strict';
 
 const { extension } = require('./extensions/graphql/customizeExt')
+const gqlNexusExtends = require('./extensions/graphql')
 
 module.exports = {
   /**
@@ -12,7 +13,7 @@ module.exports = {
    register({ strapi }) {
     const extensionService = strapi.plugin('graphql').service('extension');
 
-    extensionService.use(extension);
+    extensionService.use(extension).use(gqlNexusExtends);
   },
 
   /**

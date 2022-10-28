@@ -60,3 +60,10 @@ Things you should note:
 - data wrapper still be there if the response is collectionType.
 
 To learn more about GraphQL in Strapi [visit documentation](https://docs.strapi.io/developer-docs/latest/plugins/graphql.html)
+
+## Changelog
+
+`2022-10-27`
+
+- copy package nexus to local, to fix the subscription schema problem
+- add subscription sample at [src/extensions/graphql/types/subTest.js](../../extensions/graphql/types/subTest.js)
